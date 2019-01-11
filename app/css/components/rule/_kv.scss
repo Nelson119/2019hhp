@@ -1,0 +1,36 @@
+
+[role=kv] {
+    padding-top: 67px;
+    margin-top: -67px;
+    .slick{
+        position: relative;
+        height: 0;
+        padding-top: per(505,1920);
+        @media screen and (max-width: 1000px) {
+            padding-top: per(918, 800);
+            margin-top: vwxs(0,800);
+        }
+    }
+    figure{
+        @include SubItem();
+        background: center/cover;
+        margin: 0;
+        img{
+            max-width: 100%;
+        }
+    }
+    .cta{
+        position: absolute;
+        top: 0;
+        left:0; 
+        margin: per(270,1366) 0 0 per(900,1366);
+        width: per(200,1366);
+        img{
+            @include SubImgW();
+        }
+        @media screen and (max-width: 1000px) {
+            margin: per(365,800) 0 0 per((800-289)/2,800);
+            width: per(289,800);
+        }
+    }
+}

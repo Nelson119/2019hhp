@@ -1,0 +1,15 @@
+[role=rule]{
+    @import "rule/kv";
+    @import "rule/wayContent";
+    @import "rule/notice";
+}
+[role=index]{
+    @import "index/kv";
+    @import "index/events";
+}
+[role=steps]{
+    color: #000;
+    @import "step/nav";
+    @import "step/title";
+    @import "step/form";
+}

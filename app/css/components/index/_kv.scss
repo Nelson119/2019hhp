@@ -1,0 +1,94 @@
+
+[role=kv] {
+    height: 0;
+    padding-top: per(655,1920);
+    position: relative;
+    @media screen and (max-width: 1000px) {
+        padding-top: per(1100, 800);
+		// margin-top: vwxs(100,750);
+    }
+    .slick-list{
+        overflow: hidden;
+        @include SubItem();
+        &:hover{
+            .slick-next,.slick-prev{
+                opacity: 1;
+            }
+        }
+    }
+    .slick-track{
+        height: 100%;
+    }
+    .slick-slide{
+        display: block;
+        height: 100%;
+        >div, figure{
+            height: 100%;
+            background: center/100%;
+        }
+    }
+    .slick-next,.slick-prev{
+        width: 15px;
+        height: 28px;
+        z-index: 10;
+        opacity: 0.5;
+        &:before{
+            display: none;
+        }
+        &:hover{
+            opacity: 1;
+        }
+    }
+    .slick-next{
+        background: url(../img/kv/next.png);
+        right: 15px;
+    }
+    .slick-prev{
+        background: url(../img/kv/prev.png);
+        left: 15px;
+    }
+    .slick{
+        @include SubItem();
+    }
+    .cta,.cta2{
+        position: absolute;
+        top: 0;
+        left:0; 
+        width: per(158,1366);
+        display: block;
+        height: vwxs(37,1366);
+        line-height: vwxs(37,1366);
+        color: #e71a1d;
+        background: #f9f48e;
+        text-align: center;
+        display: block;
+        border-radius: 100px;
+        font-size: vwxs(15,1366);
+        box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        font-weight: bold;
+        &:hover{
+            background: rgba(0,0,0,0.29);
+            color: #fff;
+            box-shadow: 0 0 0 1px #fff inset;
+            transition-duration: 0.2s;
+        }
+        @media screen and (max-width: 1000px) {
+            width: per(289,800);
+            height: vwxs(68,800);
+            line-height: vwxs(68,800);
+            font-size: vwxs(32,800);
+        }
+    }
+    .cta{
+        margin: per(371,1366) 0 0 per(777,1366);
+        @media screen and (max-width: 1000px) {
+            margin: per(576,800) 0 0 per(100,800);
+        }
+    }
+    .cta2{
+        margin: per(371,1366) 0 0 per(942,1366);
+        @media screen and (max-width: 1000px) {
+            margin: per(576,800) 0 0 per(420,800);
+        }
+    }
+}

@@ -1,0 +1,143 @@
+
+[role=wayContent] {
+    background: url(../img/rule/background2.jpg) repeat;
+    .viewport{
+        img{
+            max-width: 100%;
+        }
+        .video{
+            position: absolute;
+            top: 0;
+            width: per(983,1366);
+            display: block;
+            text-align: center;
+            padding-top: per(520,1366);
+            margin-top: per(1187,1366);
+            margin-left: per(192,1366);
+            iframe{
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+            @media screen and (max-width: 1136px) {
+                width: per(750, 800);
+                padding-top: per(400, 800);
+                margin-top: per(3050, 800);
+                margin-left: per(25, 800);
+            }
+        }
+        .buttons{
+            position: absolute;
+            top: 1070px;
+            display: block;
+            width: 100%;
+            text-align: center;
+            @media screen and (max-width: 1136px) {
+                top: vwxs(2400, 800);
+            }
+            a+a{
+                margin-left: per(15,1090);
+                @media screen and (max-width: 1136px) {
+                    margin: per(50,800) 0 0 0;
+                }
+            }
+            .cta1{
+                padding: 0;
+                width: per(187,1090);
+                &:hover{
+                    background: url(../img/rule/cta1-hover.png) no-repeat center/ 100%;
+                    img{
+                        opacity: 0;
+                        transition-duration: 0.2s;
+                    }
+                    @media screen and (max-width: 1136px) {
+                        background-image: url(../img/rule/cta1-m-hover.png);
+                    }
+                }
+                @media screen and (max-width: 1136px) {
+                    background: url(../img/rule/cta1-m-hover.png);
+                    width: vwxs(585,800);
+                }
+            }
+            .cta2{
+                padding: 0;
+                width: per(302,1090);
+                &:hover{
+                    background: url(../img/rule/cta2-hover.png) no-repeat center/ 100%;
+                    @media screen and (max-width: 1136px) {
+                        background-image: url(../img/rule/cta2-m-hover.png);
+                    }
+                }
+                @media screen and (max-width: 1136px) {
+                    width: vwxs(585,800);
+                }
+            }
+            .cta1, .cta2{
+                padding: 0;
+                background: none;
+                img{
+                    width: 100%;
+                }
+                &:hover{
+                    img{
+                        opacity: 0;
+                        transition-duration: 0.2s;
+                    }
+                }
+            }
+            .btn:active,
+            img:focus{
+                outline: none;
+                box-shadow:none;
+                
+            }
+        }
+        figure{
+            margin:0;
+        }
+        .links{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+        }
+        .link1{
+            position: absolute;
+            width: per(1140,1366);
+            padding-top: per(200,1366);
+            margin: per(244,1366) 0 0 per(111,1366);
+            opacity: 0.2;
+            filter: blur(20px);
+            border-radius: 50%;
+            transition-duration: 0.2s;
+            // &:hover{
+            //     background: #e8973e;
+            // }
+            @media screen and (max-width: 1136px) {
+                width: per(683,800);
+                padding-top: per(587,800);
+                margin: per(251,800) 0 0 per(55,800);
+            }
+        }
+        .link2{
+            position: absolute;
+            width: per(1140,1366);
+            padding-top: per(200,1366);
+            margin: per(480,1366) 0 0 per(111,1366);
+            opacity: 0.2;
+            filter: blur(20px);
+            border-radius: 50%;
+            transition-duration: 0.2s;
+            // &:hover{
+            //     background: #e8973e;
+            // }
+            @media screen and (max-width: 1136px) {
+                width: per(683,800);
+                padding-top: per(922,800);
+                margin: per(872,800) 0 0 per(55,800);
+            }
+        }
+    }
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-TW" itemscope="" itemtype="http://schema.org/WebPage">
+<head>
+    <link rel="shortcut icon" href="https://cdn.samsung.com/etc/designs/smg/global/imgs/favicon.ico">
+    <link rel="apple-touch-icon" href="https://cdn.samsung.com/etc/designs/smg/global/imgs/app_ico.png" sizes="144x144">
+    @@include('common/style.html',{"title": "Samsung Galaxy 新春限量送","description": "於活動期間2019/01/01~02/28全通路購買Galaxy系列指定產品(Galaxy Note9 、Galaxy S9︱S9+ 、 Galaxy A9、Galaxy A7、Galaxy J6+、Galaxy Tab S4、Galaxy Tab A10.5、 Galaxy Watch 46mm/42mm (藍牙) )，送限量好禮！","keywords": "Samsung 、 Galaxy Note9 、Galaxy S9︱S9+ 、 Galaxy A9、Galaxy A7、Galaxy J6+、Galaxy Tab S4、Galaxy Tab A10.5、 Galaxy Watch 46mm/42mm (藍牙) 、無線閃充充電板、雙向閃電快充行動電源、指定皮革錶帶、新春限量送、心相聚 每一刻","site": "samsung_taiwan","url": "https://www.samsung.com/tw/","image": "https://cdn.samsung.com/etc/designs/smg/global/imgs/logo-square-letter.png","icon": "https://cdn.samsung.com/etc/designs/smg/global/imgs/app_ico.png","date": "{{date}}"})
+</head>
+<body>
+    <div id="wrap" data-eventname="eventname">
+        
+        <div id="static_header_gnb"></div>
+
+        <div id="content" role="content">
+            <aside role="steps">
+                @@include('components/title.html')
+                @@include('components/stepnav.html', {"step1": "", "step2":"class=active", "step3":"","step4":""})
+                @@include('components/step2.html')
+                <footer>
+                    <p class="footer-copyright">三星客服專線： 0800-329-999  <br class="visible-xs">服務時間：週一~週日 00:00~23:59</p>
+                </footer>
+            </aside>
+        </div>
+
+        <div id="static_footer"></div>
+
+    </div>
+    @@include('common/script.html')
+    <script src="https://twsamsungcampaign.azureedge.net/common/js/event-common.js"></script>
+    <script type="text/javascript" src="https://twsamsungcampaign.azureedge.net/common/js/s_code_next_event.js"></script>
+    <script type="text/javascript">
+        var eventname = '2019-galaxy-promotion';
+        var pagename = 'index';
+        s.pageName = 'tw:campaign:'+eventname+':'+pagename;
+        s.hier1    = 'tw>campaign>'+eventname+'>'+pagename;
+        s.channel  = 'tw:campaign';
+        s.prop1    = 'tw';
+        s.prop2    = 'tw:campaign';
+        s.prop3    = 'tw:campaign:'+eventname+'';
+        s.prop4    = 'tw:campaign:'+eventname+':'+pagename;
+        var s_code = s.t(); if (s_code) document.write(s_code);
+    
+        function click_s_code_v33() {
+            var e_name = $(this).data('omni');
+            // console.log(e_name);
+            if (e_name) {
+                s.linkTrackVars = 'eVar33,events';
+                s.linkTrackEvents = 'event45';
+                s.eVar33 = e_name;
+                s.events = 'event45';
+                s.tl(this,'o',e_name);
+                s.eVar33 = null;
+            }
+            return;
+        }
+    
+        app.ready(function($){
+            app.$('[data-omni-type][data-omni]').on('click',click_s_code_v33);
+        });
+    </script>
+</body>
+</html>

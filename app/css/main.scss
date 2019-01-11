@@ -1,0 +1,46 @@
+$icon-font-path: '../fonts/';
+$fa-font-path: '../fonts/';
+@import "common/webfonts";
+@import "common/override";
+[role=content]{
+    // bower:scss
+    @import "vendor/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+    @import "vendor/slick-carousel/slick/slick.scss";
+    @import "vendor/slick-carousel/slick/slick-theme.scss";
+    @import "vendor/bootstrap/scss/bootstrap.scss";
+    @import "vendor/bootstrap-select/sass/bootstrap-select.scss";
+    @import "vendor/bootstrap-select/sass/variables.scss";
+    // endbower
+    @import "common/variables";
+    @import "common/global";
+    @import "common/anime";
+}
+[role=content]{
+    @import "common/variables";
+    @import "components/header";
+    @import "components/footer";
+    @import "components/main";
+    footer{
+        height: 40px;
+        line-height: 40px;
+        font-size: 15px;
+        background: #616161;
+        color: #fff;
+        text-align: center;
+        p{
+            max-width: 1000px;
+            margin: 0 auto;
+            font-weight: 600;
+        }
+        @media screen and (max-width: 1000px) {
+            height: 80px;
+        }
+    }
+    @media screen and (max-width: 1000px) {
+        // margin-top: 65px;
+    }
+}
+
+#static_header_gnb{
+	min-height: 65px;
+}

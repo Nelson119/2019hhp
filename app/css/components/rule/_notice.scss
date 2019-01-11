@@ -1,0 +1,24 @@
+
+[role=notice] {
+    background: #656565;
+    font-size: 14px;
+    line-height: 2;
+    padding-top: 1.5em;
+    padding-bottom: 3em;
+    font-weight: 800;
+    @media screen and (max-width: 1136px) {
+        font-size: vwxs(19,800);
+    }
+    .viewport{
+        
+        .inner{
+            width: 1090px;
+            margin: 0 auto;
+            max-width: 100%;
+            ol{
+                list-style: decimal;
+                padding-left: 1.3em;
+            }
+        }
+    }
+}

@@ -1,0 +1,75 @@
+{
+  "name": "",
+  "private": true,
+  "dependencies": {
+    "modernizr": "~2.8.1",
+    "detectizr": "^2.2.0",
+    "jquery": "1.12",
+    "bootstrap-sass": "3.3.7",
+    "lightgallery": "^1.6.11",
+    "slick-carousel": "^1.8.1",
+    "gsap": "^2.0.2",
+    "tooltip.js": "https://unpkg.com/tooltip.js",
+    "popper.js": "^1.14.4",
+    "bootstrap": "^4.1.3",
+    "bootstrap-select": "^1.13.2",
+    "bootstrap-datepicker": "^1.8.0",
+    "jquery-TWzipcode": "^1.7.14",
+    "venobox": "^1.8.5"
+  },
+  "overrides": {
+    "slick-carousel": {
+      "main": [
+        "slick/fonts/*",
+        "slick/slick.js",
+        "slick/slick.scss",
+        "slick/slick-theme.scss"
+      ]
+    },
+    "bootstrap": {
+      "main": [
+        "./dist/js/bootstrap.js",
+        "./scss/bootstrap.scss"
+      ]
+    },
+    "bootstrap-select": {
+      "main": [
+        "./js/bootstrap-select.js",
+        "./js/defaults-zh_TW.js",
+        "./sass/bootstrap-select.scss",
+        "./sass/variables.scss"
+      ]
+    },
+    "bootstrap-datepicker": {
+      "main": [
+        "./dist/css/bootstrap-datepicker.standalone.css",
+        "./dist/js/bootstrap-datepicker.min.js",
+        "./dist/locales/bootstrap-datepicker.zh-TW.min.js"
+      ]
+    },
+    "jquery-colorbox": {
+      "main": [
+        "jquery.colorbox.js",
+        "example3/colorbox.css"
+      ]
+    },
+    "font-awesome": {
+      "main": [
+        "less/font-awesome.less",
+        "scss/font-awesome.scss",
+        "fonts/*"
+      ]
+    },
+    "lightgallery": {
+      "main": [
+        "./dist/js/lightgallery-all.js",
+        "./dist/css/lightgallery.css"
+      ]
+    },
+    "jquery-TWzipcode": {
+      "main": "jquery.twzipcode.js"
+    }
+  }
+}
+
+

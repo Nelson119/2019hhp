@@ -1,0 +1,170 @@
+&[role=content]{
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-feature-settings: "liga";
+	font-style: normal;
+	text-rendering: optimizelegibility;
+	letter-spacing:0.5px;
+	word-spacing:0.5px;
+	overflow-x:hidden;
+	position:relative;
+	min-width: 320px;
+    background: $body-bg;
+	color: $text-color;
+    font-family: $font-family-sans-serif;
+    font-size: 18px;
+
+    @media screen and (max-width: 1000px) {
+        background: #04091D;
+        font-size: 16px;
+    }
+    >*{
+        opacity: 0;
+        filter: blur(5px);
+        position: relative;
+    }
+    &:before{
+        content: '';
+        @include SubItem();
+        background: $body-bg;
+    }
+
+    &.loaded{
+        >*{
+            opacity: inherit;
+            transition-duration: 0.5s;
+            filter: none;
+        }
+    }
+
+    figure[data-src], img[data-src]{
+        opacity: 0;
+        transition-duration: 0.3s;
+        &.loaded{
+            opacity: 1;
+        }
+    }
+    .viewport{
+        width: 1366px;
+        margin: 0 auto;
+        position: relative;
+        padding-top: 1px;
+        margin-top: -1px;
+        @media screen and (max-width: 1200px) {
+            width: per(723,800);
+        }
+    }
+    .container{
+        max-width: 1200px;
+        width: 1200px;
+        @media screen and (max-width: 1200px) {
+            width: 100%;
+        }
+    }
+    .section{
+        
+        h2{
+        }
+        h3{
+            height: 140px;
+            line-height: 140px;
+            color: #000;
+            font-size: 30px;
+            font-weight: 100;
+            margin: 0;
+            letter-spacing: 0.35em;
+            @media screen and (max-width: 1000px) {
+                font-size: 22px;
+                height: em(100,22);
+                line-height: em(100,22);
+            }
+            span{
+                letter-spacing: 0;
+                font-weight: 400;
+                color: #000;
+                line-height: 1em;
+                height: 1em;
+                display: inline-block;
+                border-left: 1px solid currentColor;
+                margin-left: 8px;
+                padding-left: 20px;
+                @media screen and (max-width: 1000px) {
+                    font-size: 22px;
+                }
+            }
+        }
+        hr{
+            display: block;
+        }
+        h5{
+            font-size: 14px;
+        }
+        h6{
+            font-size: 16px;
+            line-height: 1.4;
+        }
+        >aside{
+        }
+        .btn-g{
+            width: 230px;
+            // background: #1b97e0;
+            height: 40px;
+            line-height: 40px;
+            padding: 0;
+            border-radius: 20px;
+            text-align: center;
+            color: #fff;
+            font-family: Noto Sans TC,microsoft jhenghei,微軟正黑體,Helvetica Neue,Helvetica,Arial,sans-serif;
+        }
+    }
+    .SamsungOne{
+        font-family: 'SamsungOne', 'Noto Sans TC','microsoft jhenghei',微軟正黑體,'Helvetica Neue',Helvetica,Arial,sans-serif;
+    }
+    .SamsungSharpSans{
+        font-family: 'SamsungSharpSans', 'Noto Sans TC','microsoft jhenghei',微軟正黑體,'Helvetica Neue',Helvetica,Arial,sans-serif;
+    }
+    .backtop {
+        width: 58px;
+        border-radius: 4px;
+        background: #363636;
+        font-size: 0;
+        opacity: .7;
+        position: fixed;
+        right: 32px;
+        bottom: 20px;
+        z-index: 1000;
+        text-align: center;
+        cursor: pointer; 
+        &.fade{
+            opacity: 0;
+            // filter: blur(5px);
+            // position: relative;
+            &.in{
+                opacity: inherit;
+                // filter: none;
+            }
+        }
+    }
+      @media screen and (max-width: 1024px) {
+        .backtop {
+          width: 10%;
+          right: 3%;
+          bottom: 3%; } }
+    #note9-footer {
+        position: relative;
+        width: 100%;
+        height: auto;
+        padding: 10px 15px;
+        background: #000000;
+        z-index: 2;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+         p {
+            color: #dbdbdb;
+            font-size: 14px;
+            line-height: 1.5;
+            margin: 0;
+            text-align: center;
+        }
+    }
+}
